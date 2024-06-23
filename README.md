@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Study-With-N-Project
 ## 1.Các chức năng của trang web 
 ### 1.1.Chức năng tìm kiếm
