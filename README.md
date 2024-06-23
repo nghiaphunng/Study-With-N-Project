@@ -67,7 +67,7 @@
  - Mô tả: chức năng like bài viết phụ thuộc vào chế độ hiển thị của bài viết đó: công khai, người theo dõi, riêng tư
 
 ## 2.Video demo 
-- Link video trên youtube : 
+- Link video trên youtube: https://youtu.be/TcNtlN28tL8
 
 
     
