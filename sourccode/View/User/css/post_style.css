@@ -1,0 +1,256 @@
+.post-container {
+	background-color: gainsboro;
+	margin-top: 30px;
+	border: 4px solid #c0c0c0;
+	border-radius: 20px;
+}
+.info-post {
+	display: flex;
+	align-items: center;
+	padding: 5px 15px;
+}
+
+.info-general-post {
+	margin-left: 5px;
+	flex-grow: 4;
+}
+
+.info-count-like-comment {
+	flex-grow: 1;
+}
+
+.count-like-post, .count-comment-post{
+	display: block;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+.count-like-post:hover, .count-comment-post:hover{
+	color: red;
+}
+.count-like-post, .count-comment-post{
+	display: block;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.comment-post{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	display: flex;
+	width: 90%;
+	justify-content: space-around;
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.show-comment-post-btn, .show-like-post-btn{
+	width: 25%;
+	padding: 5px;
+	background-color: gainsboro;
+	border: none;
+	cursor: pointer;
+}
+.show-comment-post-btn:hover, .show-like-post-btn:hover{
+	background-color: azure;
+}
+.input-comment-post{
+	display: flex;
+}
+.content-post {
+	padding: 5px 15px;
+}
+
+.content-post .title-post{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.up-new-post {
+	margin-top: 20px;
+	display: flex;
+	padding: 5px 10px;
+
+}
+.post-suggest {
+	margin-left: 5px;
+	background-color: #e0e0e0;
+	border-radius: 20px;
+	flex-grow: 1;
+	align-content: center;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.info-user-post{
+	display: flex;
+	align-items: center;
+}
+.info-user-post .username{
+	margin-bottom: 15px;
+}
+.describe-post{
+	overflow-wrap: break-word;
+}
+.popup-container { 
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0, 0, 0, 0.6); 
+            justify-content: center; 
+            align-items: center; 
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+}
+
+.popup-box{ 
+            background: #fff; 
+            padding: 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+            width: 500px; 
+            opacity: 0; 
+            transform: scale(0.8); 
+            animation: fadeInUp 0.5s ease-out forwards; 
+            overflow-y: auto;
+            max-height: 550px;
+            position: relative;
+}
+@keyframes fadeInUp { 
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); 
+            } 
+  
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            } 
+        } 
+  
+        /* Animation for popup */ 
+        .popup-container.show { 
+            display: flex; 
+            opacity: 1; 
+        }  
+
+.remove-file-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-file-btn i.material-icons {
+    font-size: 24px;
+    color: #000;
+}
+.popup-box label{
+	font-size: 20px;
+	font-weight: bold;
+}
+.popup-box input[type=text], .popup-box textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	margin-top: 6px;
+  	margin-bottom: 16px;
+  	resize: vertical;
+}
+.btn-close-popup {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+.post-btn{
+	background-color: #04AA6D;
+	color: white;
+	padding: 5px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.popup-box h2{
+	text-align: center;
+	font-size: 25px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color: #3333ff;
+}
+
+.edit-post-btn {
+   color: red;
+   background: none;
+   border: none;
+   padding: 0;
+   cursor: pointer;
+   margin-top: -20px;
+}
+
+.post-container-edit {
+	margin-top: 10px;
+	border: 2px solid #c0c0c0;
+	border-radius: 20px;
+}
+
+.btn-mode-edit{
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.btn-mode-edit button{
+	cursor: pointer;
+	padding: 10px;
+	background: lightgray;
+	border: none;
+	font-weight: bolder;
+	color: blue;
+	border-radius: 15px;
+	animation: roundborderbutton 4s infinite;
+}
+@keyframes roundborderbutton{
+	0%{
+    	border-color: aqua;
+        border-style: solid;
+        border-width: 4px;
+    }
+    50%{
+    	border-color: seagreen;
+        border-style: solid;
+        border-width: 4px;
+    }
+    100%{
+    	border-color: skyblue;
+        border-style: solid;
+        border-width: 4px;
+    }
+}
+
+.highlightfoundpost-animation {
+	animation: highlightfound 4s;
+}
+@keyframes highlightfound{
+	0% {
+        border-color: red;
+    }
+    50% {
+        border-color: orange;
+    }
+    100% {
+        border-color: red;
+    }
+}
